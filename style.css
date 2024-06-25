@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.typing-container {
+  border: 2px solid #333;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.typing-text {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
